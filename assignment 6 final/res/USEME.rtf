@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11905\paperh16837\margl1440\margr1440\vieww25620\viewh13040\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Using our program with the GUI:
+\f1\b0 \
+\
+To load an image\
+- Click on the load button and a file chooser panel should pop up\
+- select the file you would like to load from your computer\
+\
+To greyscale an image\
+- click on the greyscale button\
+\
+To vertical-flip an image\
+- click on the vertical flip button\
+\
+To horizontal-flip an image \
+- click on the horizontal flip button\
+\
+To sepia an image\
+- click on the sepia button\
+\
+To blur an image\
+- click on the club button\
+\
+To sharpen an image\
+- click on the sharpen button\
+\
+To brighten an image\
+- insert a positive numeric value into the text box\
+- the number is the factor by which you would like to brighten your image\
+\
+To darken an image\
+- insert a negative numeric value into the text box\
+- the number is the factor by which you would like to darken your image\
+\
+To save an image\
+- click on the save button and a file chooser panel should pop up\
+- insert the name which you would like to save your image as well as the file type \
+Ex: dogNew.png\
+- indicate the place on your computer which you would like to save the image\
+- click save\
+\
+
+\f0\b How to run our program (Script of commands) 
+\f1\b0 \
+To run our program, users need to know the name of the image file and the location of it.\
+They must first load the file, then call the change they would like to make to it, and then save the file.\
+The program can also support any file type including jpeg, png, ppm, and bpm.\
+\
+To load an image \
+# load filepath filename \
+Ex) load res/koala.ppm koala\
+\
+To save an image\
+# save filepath filename \
+Ex) save res/koala.ppm koala\
+\
+To brighten or darken an image\
+# brighten-or-darken constant name newName\
+\
+A positive constant would brighten the image by the given constant\
+Ex) load res/koala.ppm koala\
+brighten-or-darken 10 koala newKoala\
+save res/koala.ppm koala\
+\
+A negative constant would darken the image by the given constant \
+Ex) load res/koala.ppm koala\
+brighten-or-darken -10 koala newKoala\
+save res/koala.ppm koala\
+\
+To greyscale an image\
+# greyscale name newName \
+Ex) load res/koala.ppm koala\
+greyscale red koala newKoala\
+save res/koala.ppm koala\
+\
+To vertical-flip an image\
+# flip name newName\
+Ex) load res/koala.ppm koala\
+flip vertical-flip koala newKoala\
+save res/koala.ppm koala\
+\
+To horizontal-flip an image \
+#horizontal-flip name newName \
+Ex) load res/koala.ppm koala\
+flip horizontal-flip koala newKoala\
+save res/koala.ppm koala\
+\
+To filter an image\
+#filter blur name newName\
+Ex) load res/koala.ppm koala\
+filter blur koala newKoala\
+save res/koala.ppm koala\
+Or \
+#filter sharpen name newName\
+Ex) load res/koala.ppm koala\
+filter sharpen koala newKoala\
+save res/koala.ppm koala\
+\
+To transform the color of an image\
+#color-transformation greyscale name newName \
+Ex) load res/koala.ppm koala\
+color-transformation greyscale koala newKoala\
+save res/koala.ppm koala\
+Or \
+#color-transform-sepia name newName\
+Ex) load res/koala.ppm koala\
+color-transformation sepia koala newKoala\
+save res/koala.ppm koala}
